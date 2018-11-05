@@ -63,6 +63,7 @@ class Converter extends Component {
   };
 
   handleInput = event => {
+     
     this.setState({ inputAmount: event.target.value });
   }
 
@@ -71,7 +72,7 @@ class Converter extends Component {
       <div className="converter">
         <h1><span>Currency </span> Converter <span role="img" aria-label="money">&#x1f4b5;</span> </h1>
         <div className="form">
-          <input name="input" type="text" placeholder="Enter amount in SEK here" onChange={this.handleInput} value={this.state.inputAmount} />
+          <input name="input" type="text" placeholder="Enter amount in Euro here" onChange={this.handleInput} value={this.state.inputAmount} />
          </div>
        
         <div className="column-left col-md-6">

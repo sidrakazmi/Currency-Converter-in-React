@@ -25,7 +25,6 @@ class RateList extends Component {
                     console.log(key, myJson.rates[key]);
                     currencyAr.push({ key, value: myJson.rates[key]})
                 }
-
                 this.setState({ currencies: currencyAr })
 
             })
